@@ -11,8 +11,23 @@ section, header {
 
 /* 메인 배너 */
 .main-banner {
-    background-color: #f4ebe1;
-    padding: 100px 20px;
+    position: relative; /* 자식 요소인 글씨를 이 영역 안에 가두기 위함 */
+    text-align: center;
+}
+
+.banner-text {
+    position: absolute; /* 사진 위로 띄우기 */
+    top: 50%;           /* 세로 중앙 */
+    left: 50%;          /* 가로 중앙 */
+    transform: translate(-50%, -50%); /* 정확한 정중앙 배치 */
+    width: 100%;
+}
+
+.banner-text h1 {
+    color: black;       /* 요청하신 검은색 글씨 */
+    font-size: 2.5rem;
+    font-family: 'Poor Story', cursive; /* 적용하신 귀여운 폰트 */
+    text-shadow: 2px 2px 4px rgba(255,255,255,0.7); /* 글씨가 잘 보이게 배경색에 따라 그림자 추가 */
 }
 
 .main-banner h1 {
