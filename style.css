@@ -1,9 +1,5 @@
 /* 기본 세팅 */
-body {.poor-story-regular {
-  font-family: "Poor Story", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
+body {.poor-story-regular}
 
     font-family: 'Noto Sans KR', sans-serif;
     margin: 0;
