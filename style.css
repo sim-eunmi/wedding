@@ -9,10 +9,37 @@ section, header {
     padding: 20px 10px;
 }
 
-/* 메인 배너 */
+/* 기존 .main-banner 스타일을 이렇게 변경 또는 추가하세요 */
 .main-banner {
-    position: relative; /* 자식 요소인 글씨를 이 영역 안에 가두기 위함 */
+    padding: 0; /* 여백 제거 */
+    margin-bottom: 40px;
+}
+
+.hero-container {
+    position: relative; /* 자식 요소(글씨)를 이 안에 가두기 위한 기준점 */
+    width: 100%;
     text-align: center;
+}
+
+.hero-image {
+    width: 100%; /* 사진을 화면 너비에 꽉 차게 */
+    height: auto;
+    display: block;
+}
+
+.hero-text-overlay {
+    position: absolute; /* 사진 위로 띄우기 */
+    top: 50px;          /* 사진 맨 위에서부터 50px 아래 (가운데 위) */
+    left: 50%;          /* 가로 중앙 */
+    transform: translateX(-50%); /* 정확한 중앙 정렬 */
+    width: 80%;         /* 글씨가 너무 퍼지지 않게 너비 제한 */
+}
+
+.hero-text-overlay h1 {
+    color: black;       /* 글씨 색 검정 */
+    font-size: 3rem;    /* 글씨 크기 키움 (원하시는 대로 조절 가능) */
+    font-family: 'Poor Story', cursive; /* 귀여운 폰트 */
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); /* 배경에 따라 글씨 잘 보이게 테두리 효과 */
 }
 
 .banner-text {
