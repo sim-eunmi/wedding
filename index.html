@@ -1,15 +1,5 @@
 <!DOCTYPE html>
 <html lang="ko">
-<header class="main-banner">
-    <!-- 사진과 글씨를 감싸는 박스 -->
-    <div class="hero-container">
-        <img src="hero.jpg" alt="메인 웨딩 사진" class="hero-image">
-        <!-- 사진 위에 띄울 글씨 -->
-        <div class="hero-text-overlay">
-            <h1>Our Wedding Day</h1>
-        </div>
-    </div>
-</header>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>우리 결혼합니다 | 임보혁 & 심은미</title>
@@ -174,15 +164,25 @@
 <body>
     <div class="container">
         
-        <!-- 1. 메인 사진 (대문) -->
-        <section class="hero">
-            <img src="hero.jpg" alt="메인 웨딩 사진" onerror="this.src='https://via.placeholder.com/480x700?text=hero.jpg'">
-            <div class="hero-text">
-                <h1>임보혁 & 심은미</h1>
-                <p>2026년 10월 10일 토요일 낮 2시 30분</p>
-                <p>라포르테 웨딩홀 5층 라포르테(단독홀)</p>
-            </div>
-        </section>
+       <!-- 1. 메인 사진 (대문) -->
+<section class = "hero" style="position: relative; text-align: center;">
+    <!-- 메인 사진 -->
+    <img src = "hero.jpg" alt = "메인 웨딩 사진" style="width: 100%; display: block;" onerror = "this.src='https://via.placeholder.com/480x700?text=hero.jpg'" >
+    
+    <!-- 사진 위에 올릴 새로운 글씨 박스 (absolute 적용) -->
+    <div style="position: absolute; top: 40px; left: 50%; transform: translateX(-50%); width: 90%;">
+        <h1 style="color: black; font-family: 'Poor Story', cursive; font-size: 2.5rem; margin: 0; text-shadow: 2px 2px 4px rgba(255,255,255,0.8);">
+            Our Wedding Day
+        </h1>
+    </div>
+
+    <!-- 기존 글씨 (밑으로 내리거나 스타일 조정) -->
+    <div class = "hero-text" style="margin-top: 20px;">
+        <h1 style="font-size: 1.8rem;"> 임보혁 & 심은미 </ h1>
+        <p> 2026년 10월 10일 토요일 낮 2시 30분 </ p>
+        <p> 라포르테 웨딩홀 5층 라포르테(단독홀) </ p>
+    </div>
+</section>
 
         <!-- 2. 초대 말씀 -->
         <section class="greeting">
@@ -235,8 +235,8 @@
                 <img src="photo7.jpg" alt="웨딩사진7" onerror="this.src='https://via.placeholder.com/300?text=photo7.jpg'">
                 <img src="photo8.jpeg" alt="웨딩사진8" onerror="this.src='https://via.placeholder.com/300?text=photo8.jpeg'">
                 <img src="photo9.jpg" alt="웨딩사진9" onerror="this.src='https://via.placeholder.com/300?text=photo9.jpg'">
-                <img src="phot10.jpg" alt="웨딩사진10" onerror="this.src='https://via.placeholder.com/300?text=phot10.jpg'">
-                <img src="phot11.jpg" alt="웨딩사진11" onerror="this.src='https://via.placeholder.com/300?text=phot11.jpg'">
+                <img src="photo10.jpg" alt="웨딩사진10" onerror="this.src='https://via.placeholder.com/300?text=photo10.jpg'">
+                <img src="photo11.jpg" alt="웨딩사진11" onerror="this.src='https://via.placeholder.com/300?text=photo11.jpg'">
             </div>
         </section>
 
